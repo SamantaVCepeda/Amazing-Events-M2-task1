@@ -168,7 +168,6 @@ td{
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 50px;
 }
 
 
@@ -186,8 +185,7 @@ td{
   justify-content: center;
   border: solid 1px black;
   border-radius: 5px;
-  width: 31rem;
-  padding: 50px;
+  width: 30rem;
   margin: 20px;
   background: white;
 }
@@ -208,6 +206,7 @@ td{
   width: 25rem;
   height: auto;
 }
+
 
 @media only screen and (max-width: 1200px){
 
