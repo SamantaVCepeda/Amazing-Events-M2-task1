@@ -52,62 +52,41 @@
         <div class="col">
           <!-- table1 -->
           <table>
-            <tr>
-              <th colspan="3" class="T-principal">Events statistics</th>
-            </tr>
-            <tr>
-              <th>Events with the highest percentage of attendance</th>
-              <th>Events with the lowest percentage of attendance</th>
-              <th>Event with larger capacity</th>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
+            <thead>
+              <tr>
+                <th colspan="3" class="T-principal">Events statistics</th>
+              </tr>
+              <tr>
+                <th>Events with the highest percentage of attendance</th>
+                <th>Events with the lowest percentage of attendance</th>
+                <th>Event with larger capacity</th>
+              </tr>
+            </thead>
+            <tbody id="eventStatics"></tbody>
             <!-- table2 -->
             <tr>
               <th colspan="3" class="T-principal">Upcoming events statistics by category</th>
             </tr>
-            <tr>
-              <th>Categories</th>
-              <th>Revenues</th>
-              <th>Percentage of attendance</th>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Categories</th>
+                <th>Revenues</th>
+                <th>Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody id="eventUpcoming"></tbody>
             <!-- table3 -->
             <tr>
               <th colspan="3" class="T-principal">Past Events statistic category</th>
             </tr>
-            <tr>
-              <th>Categories</th>
-              <th>Revenues</th>
-              <th>Percentage of attendance</th>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
+            <thead>
+              <tr>
+                <th>Categories</th>
+                <th>Revenues</th>
+                <th>Percentage of attendance</th>
+              </tr>
+            </thead>
+            <tbody id="eventPast"></tbody>
           </table>
         </div>
       </div>
@@ -133,6 +112,8 @@
       <h2>FE04-TN</h2>
     </div>
     </footer>
+    <!-- linkJS -->
+    <script src="./js/stats.js"></script>
 	<!-- Link Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

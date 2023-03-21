@@ -1,4 +1,28 @@
-// Detail
+let urlAPI = "https://mindhub-xj03.onrender.com/api/amazing";
+
+async function getDataEvents() {
+  try {
+      let response = await fetch(urlAPI);
+      let data = await response.json();
+      console.log(data.events)
+
+      // Detail
+
+      for (events of data.events){
+        if (events._id == id){
+          document.querySelector("div.row").innerHTML += cardDetail(events);
+        }
+      }
+
+  } catch (error) {
+    console.log(error.mesage)
+  }
+};
+
+getDataEvents();
+
+
+// // Detail
 
 const queryString = location.search
 
@@ -19,7 +43,7 @@ function cardDetail(element) {
                 <li>Date: ${element.date}</li>
                 <li>Place: ${element.place}</li>
                 <li>Capacity: ${element.capacity}</li>
-                <li>Assistance: ${element.assistance}</li>
+                <li>Assistance: ${element.assistance || element.estimate}</li>
                 <li>Description: ${element.description}</li>
                 <li>Price: $ ${element.price}</li>
               </ul>
@@ -28,9 +52,3 @@ function cardDetail(element) {
 };
 
 
-
-for (events of data.events){
-  if (events.id == id){
-    document.querySelector("div.row").innerHTML += cardDetail(events);
-  }
-}
